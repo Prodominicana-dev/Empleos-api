@@ -1,0 +1,32 @@
+@api = http://localhost:3001/Suscripcion
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "IdSuscripcion":1
+}
+###
+
+GET {{api}}/1007
+
+###
+
+DELETE {{api}}/2
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/2029
+
+Content-Type: application/json
+
+{
+    "Nombre": "Fausto",
+      "Apellidos": "Tineo"
+     
+}
